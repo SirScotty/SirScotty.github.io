@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Binary Lights
+        </title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td align=center>
+                    <a id="1"><img id="lione" src="http://i.imgur.com/9BUDH.png"><br><img  onclick="changelight(1)" src='SirScotty.github.io/Screen Shot 2016-05-04 at 4.19.04 PM.png'></a>
+                </td>
+                <td align=center>
+                    <a id="2"><img id="litwo" src="http://i.imgur.com/9BUDH.png"><br><img  onclick="changelight(2)" src='SirScotty.github.io/Screen Shot 2016-05-04 at 4.19.04 PM.png'></a>
+                </td>
+                <td align=center>
+                    <a id="3"><img id="lithree" src="http://i.imgur.com/9BUDH.png"><br><img  onclick="changelight(3)" src='SirScotty.github.io/Screen Shot 2016-05-04 at 4.19.04 PM.png'></a>
+                </td>
+                <td align=center>
+                    <a id="4"><img id="lifour" src="http://i.imgur.com/9BUDH.png"><br><img  onclick="changelight(4)" src='SirScotty.github.io/Screen Shot 2016-05-04 at 4.19.04 PM.png'></a>
+                </td>
+            </tr>
+        </table>
+        <script>
+            function changelight(x) {
+                document.getElementById(x).innerHTML="<img src='http://i.imgur.com/2DOte.png'><br><img onclick='changelightback("+ x + ")' src='SirScotty.github.io/ScreenShot2016-05-04at4.18.53PM.png'>";
+            }
+            function changelightback(x) {
+                document.getElementById(x).innerHTML="<img src='http://i.imgur.com/9BUDH.png'><br><img onclick='changelight(" + x + ")' src='SirScotty.github.io/Screen Shot 2016-05-04 at 4.19.04 PM.png'>";
+            }
+        </script>
+    </body>
+</html>
