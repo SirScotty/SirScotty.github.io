@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+    <canvas id="myCanvas" height="2000px" width="2000px" onclick="squares()"></canvas>
+    <script>
+        function squares() {
+                var c=document.getElementById("myCanvas");
+				var rectangle=c.getContext("2d");
+				rectangle.fillStyle = "#"+ Math.random().toString(16).substr(-6);
+				rectangle.fillRect (0,0,2000,2000);
+            }
+    </script>
